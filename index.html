@@ -14,35 +14,47 @@
         </div>
     </div>
     <div class="container">
-        <header>
+        <header class="head">
             <p class="text intro">Capybara Games! You know you need something like this in your life to help you realize your deepest boardgame dreams! Sign up and get started right now!</p>
             <p class="text intro sub">You know what to do</p>
         </header>
         
-            <form action="dummyurl" method="post"> 
+            <form class="main" action="dummyurl" method="post"> 
                 <main>
                     <h3>Let's do this!</h3>
-                <label for="first-name">First name</label>
-                <input type="text" id="first-name">
-
-                <label for="last-name">Last name</label>
-                <input type="text" id="last-name">
-
-                <label for="emial">Email address</label>
-                <input type="email" id="emial">
-
-                <label for="tel-number">Phone number</label>
-                <input type="tel" id="tel-number">
-
-                <label for="init-password">Password</label>
-                <input type="password" id="init-password">
-
-                <label for="conf-password">Confirm password</label>
-                <input type="password" id="conf-password">
-            </main>
-                <button type="submit">Create Account</button>
+                    <div class="input-cont">
+                        <div class="form-group">
+                            <label for="first-name">First name</label>
+                            <input type="text" id="first-name" placeholder="Jane" minlength="2">
+    
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" placeholder="Doe" minlength="2">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="emial">Email address</label>
+                            <input type="email" id="emial" placeholder="youremail@address.com" minlength="6">
+        
+                            <label for="tel-number">Phone number</label>
+                            <input type="tel" id="tel-number" placeholder="(+995) 000 000 000" minlength="9">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="init-password">Password</label>
+                            <input type="password" id="init-password" placeholder="*********" minlength="8">
+        
+                            <label for="conf-password">Confirm password</label>
+                            <input type="password" id="conf-password" placeholder="*********" minlength="8">
+                            <p id="passcheck"></p>
+                        </div>
+                    </div>
+                </main>
+                <div class="button-footer">
+                    <button type="submit">Create Account</button>
+                    <p class="sign-in"> Aleady signed up? <a>Sign in</a></p>
+                </div>
             </form>
-        <footer>
+        <footer class="foot">
 
 
         </footer>

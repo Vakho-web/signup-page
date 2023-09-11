@@ -1,5 +1,5 @@
-* {
-    border: solid red 1px;
+:root {
+    --text-size: 30px;
 }
 
 body {
@@ -7,6 +7,7 @@ body {
     display: flex;
     height: 100vh;
     width: 100vw;
+    background-color: white;
 }
 
 .side-bar {
@@ -30,3 +31,94 @@ body {
     height: 100%;
     width: 100%;
 }
+
+img {
+    border-radius: 20px;
+}
+
+p.text, p.intro {
+    font-size: var(--text-size);
+    font-weight: 600;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+main {
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header, form, main{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer {
+    height: 20vh;
+}
+
+form {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.form-group {
+    display: inline-block;
+    width: auto;
+}
+
+h3 {
+    font-size: var(--text-size);
+}
+
+label,input{
+    display:flex;
+    flex-direction:column;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: calc(var(--text-size) / 2);
+}
+
+.input-cont {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    height: 25px;
+}
+
+a {
+    color: green;
+}
+
+p.sign-in {
+    font-size: calc(var(--text-size) / 1.5);
+    margin-left: 10px;
+}
+
+input:hover {
+    border: solid beige 2px;
+}
+
+p#passcheck {
+    margin-left: 10px;
+    font-size: calc(var(--text-size) / 2)
+}
+
