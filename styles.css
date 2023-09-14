@@ -1,5 +1,6 @@
 :root {
     --text-size: 30px;
+    --bkgcolor: beige;
 }
 
 body {
@@ -7,7 +8,7 @@ body {
     display: flex;
     height: 100vh;
     width: 100vw;
-    background-color: white;
+    background-color: var(--bkgcolor);
 }
 
 .side-bar {
@@ -41,10 +42,6 @@ p.text, p.intro {
     font-weight: 600;
     margin-right: 10%;
     margin-left: 10%;
-}
-
-main {
-    background-color: white;
 }
 
 .container {
